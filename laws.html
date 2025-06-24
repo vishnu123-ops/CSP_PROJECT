@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Hub</title>
+	<link rel="stylesheet" href="community.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body class="les">
+	<header>
+		<a href="index.html"><h1>Student Hub</h1></a>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="resources.html">Education Resources</a></li>
+				<li><a href="laws.html">Education Laws and Rights</a></li>
+				<li><a href="studentlife.html">Student Life</a></li>
+				<li><a href="community.html">Community</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Education Laws and Rights</h2>
+			<p>Here are some important laws and rights that protect students:</p>
+			<ul>
+				<li>The Family Educational Rights and Privacy Act (FERPA)</li>
+				<li>The Individuals with Disabilities Education Act (IDEA)</li>
+				<li>The Americans with Disabilities Act (ADA)</li>
+				<li>The Higher Education Opportunity Act (HEOA)</li>
+				<li>The No Child Left Behind Act (NCLB)</li>
+			</ul>
+			<p>Here are some additional resources:</p>
+			<ul>
+				<li><a href="https://www2.ed.gov/about/offices/list/ocr/docs/dcl-factsheet-201104.html">Dear Colleague Letter: Harassment and Bullying</a></li>
+				<li><a href="https://www2.ed.gov/about/offices/list/ocr/504faq.html">Section 504 Frequently Asked Questions</a></li>
+				<li><a href="https://www2.ed.gov/about/offices/list/ocr/docs/dcl-title-ix-coordinators-guide-201504.pdf">Title IX Coordinators' Guide</a></li>
+				<li><a href="https://www2.ed.gov/about/offices/list/ocr/docs/howto.pdf">How to File a Discrimination Complaint with the Office for Civil Rights</a></li>
+			</ul>
+		</section>
+		<div id="quiz">
+  <h2>Legal Concepts Quiz</h2>
+  <p id="question"></p>
+  <div id="choices"></div>
+  <button id="submit">Submit</button>
+  <p id="result"></p>
+</div>
+<section name="quiz">
+<script>
+  var questions = [
+    {
+      question: "What is the legal term for a voluntary act that is illegal?",
+      choices: ["Misdemeanor", "Felony", "Infraction", "Tort"],
+      answer: "Misdemeanor"
+    },
+    {
+      question: "What is the legal term for a contract that has been broken?",
+      choices: ["Void", "Voidable", "Breached", "Unenforceable"],
+      answer: "Breached"
+    },
+    {
+      question: "What is the legal term for a court order to stop doing something?",
+      choices: ["Injunction", "Subpoena", "Writ of habeas corpus", "Ex parte"],
+      answer: "Injunction"
+    }
+  ];
+
+  var currentQuestion = 0;
+  var score = 0;
+
+  function loadQuestion() {
+    var q = questions[currentQuestion];
+    var choicesHtml = "";
+    for (var i = 0; i < q.choices.length; i++) {
+      choicesHtml += "<input type='radio' name='answer' value='" + q.choices[i] + "'> " + q.choices[i] + "<br>";
+    }
+    document.getElementById("question").innerHTML = q.question;
+    document.getElementById("choices").innerHTML = choicesHtml;
+  }
+
+  function checkAnswer() {
+    var userAnswer = document.querySelector('input[name="answer"]:checked').value;
+    var q = questions[currentQuestion];
+    if (userAnswer === q.answer) {
+      score++;
+      document.getElementById("result").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result").innerHTML = "Incorrect. The correct answer was " + q.answer + ".";
+    }
+    currentQuestion++;
+    if (currentQuestion === questions.length) {
+      showScore();
+    } else {
+      loadQuestion();
+    }
+  }
+
+  function showScore() {
+    document.getElementById("quiz").innerHTML = "You got " + score + " out of " + questions.length + " questions correct.";
+  }
+
+  document.getElementById("submit").addEventListener("click", checkAnswer);
+  loadQuestion();
+</script>
+<style>
+  .legal-quiz {
+    background-color: #aaa;
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  #quiz {
+    background-color: #aaa;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #
+	}
+</style>
+</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Student Hub. All rights reserved.</p>
+	</footer>
+</body>
+</html>

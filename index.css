@@ -1,0 +1,259 @@
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #005baa;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main section */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0077c2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #0060a6;
+}
+
+/* Footer */
+footer {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to bottom, #0072c6, #00a9e0);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to top, #0072c6, #00a9e0);
+}
+
+/* Body */
+
+
+.ind {
+  background-image: url('download.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#news {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+#news h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.article {
+  margin-bottom: 40px;
+}
+
+.article h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.article a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+.resources {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.subject-container {
+  width: 30%;
+  background-color: #aaa;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.subject-container h2 {
+  margin-bottom: 10px;
+}
+
+.resource-box {
+  margin-top: 20px;
+}
+.resource-box {
+  background-color: #a5f7ee;
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.resource-box:hover {
+	text-decoration: underline;
+}
+
+.resource-box a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resource-box p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.res {
+  background-image: url('resources.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.les {
+  background-image: url('law.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.stud {
+  background-image: url('student.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.comm {
+  background-image: url('community.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.hom {
+  background-image: url('home.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
